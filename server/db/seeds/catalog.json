@@ -1,0 +1,1514 @@
+{
+  "content": {
+    "brand_name": "MONTEVAR",
+    "collection_name": "OBSIDIANA Nº 01",
+    "collection_tagline": "Edición limitada · Sastrería de autor",
+    "select_hint": "Selecciona un producto",
+    "scroll_hint": "Desliza para explorar",
+    "marquee_text": "OBSIDIANA",
+    "loading_label": "Cargando la colección",
+    "cta_shop": "Comprar colección",
+    "back_label": "Colección",
+    "add_to_cart": "Añadir al carrito",
+    "personalization_fee_cents": "3500000",
+    "currency": "COP",
+    "footer_copyright": "© 2026 Montevar · Sastrería y relojería",
+    "legal_terms": "Términos y condiciones",
+    "legal_privacy": "Privacidad",
+    "legal_cookies": "Cookies",
+    "cart_title": "Tu carrito",
+    "cart_empty": "Tu carrito está vacío. Explora la colección y elige tu chaqueta.",
+    "checkout_note": "Pago y envío se coordinan por WhatsApp. Envíos a toda Colombia.",
+    "home_scroll_hint": "Desliza para ver toda la colección",
+    "catalog_eyebrow": "Temporada 26",
+    "catalog_title": "La colección completa",
+    "catalog_subtitle": "Cada prenda tiene su propio mundo en 3D. Elige una para explorarla.",
+    "filter_all": "Todo",
+    "card_cta": "Ver en 3D",
+    "editorial_formal_title": "Formal, sin rigidez",
+    "editorial_formal_text": "Blazer, trench, abrigo, chaleco de tweed, pantalón sastre y camisa oxford. Cortes limpios para la ciudad.",
+    "editorial_oversize_title": "Oversize de peso pesado",
+    "editorial_oversize_text": "Hoodie, camiseta, sobrecamisa, bomber y puffer: hombros caídos y caída amplia.",
+    "editorial_cta": "Ver la línea",
+    "newsletter_title": "Primero en saber de cada lanzamiento",
+    "footer_tagline": "Sastrería y relojería, hechas con oficio.",
+    "editorial_chaquetas_title": "Pista, con oficio de sastre",
+    "editorial_chaquetas_text": "Chaquetas de pista con franjas tejidas, cierre metálico y puños acanalados.",
+    "frieze_text": "Sastrería y relojería",
+    "editorial_relojeria_title": "El tiempo, a medida",
+    "editorial_relojeria_text": "Acero, oro y cerámica negra. Relojes de vestir para acompañar el traje.",
+    "nav_collection": "Colección",
+    "whatsapp_number": "+57 3180188734",
+    "home_rack": "chaleco,pantalon,polo"
+  },
+  "products": [
+    {
+      "slug": "blazer",
+      "name": "Blazer Soberano",
+      "tagline": "Sastrería para la noche",
+      "description": "Blazer de lana gris carbón con solapa de muesca y botones de cuerno. Corte entallado que va de la oficina a la cena.",
+      "price_cents": 76000000,
+      "currency": "COP",
+      "theme": "atelier",
+      "base_color": "#3a3b3f",
+      "stripe_color": "#d8c3a0",
+      "trim_color": "#1c1c1e",
+      "accent_color": "#c9a46a",
+      "stripe_layout": "sleeves",
+      "category": "formal",
+      "featured": true,
+      "features": [
+        [
+          "Lana peinada de 280 g",
+          "Cae limpio y no se arruga."
+        ],
+        [
+          "Hombro estructurado",
+          "Silueta firme sin rigidez."
+        ],
+        [
+          "Forro de viscosa",
+          "Se desliza sobre cualquier prenda."
+        ],
+        [
+          "Botones de cuerno",
+          "Detalles que se notan de cerca."
+        ]
+      ],
+      "sizes": [
+        [
+          "46",
+          5
+        ],
+        [
+          "48",
+          8
+        ],
+        [
+          "50",
+          9
+        ],
+        [
+          "52",
+          6
+        ],
+        [
+          "54",
+          2
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/blazer/front.webp",
+          "alt": "Blazer Soberano de lana gris carbón, vista frontal",
+          "width": 623,
+          "height": 892
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/blazer/lifestyle.webp",
+          "alt": "Hombre con el Blazer Soberano y cuello alto negro en un salón con luces doradas",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "trench",
+      "name": "Trench Medianoche",
+      "tagline": "Doble botonadura, cinturón y caída",
+      "description": "Trench cruzado azul medianoche de gabardina de lana, con cinturón de hebilla, charreteras y botones de cuerno. El abrigo que define la silueta.",
+      "price_cents": 112000000,
+      "currency": "COP",
+      "theme": "atelier",
+      "base_color": "#1e2840",
+      "stripe_color": "#d8cdb8",
+      "trim_color": "#121826",
+      "accent_color": "#8fa3c8",
+      "stripe_layout": "sleeves",
+      "category": "formal",
+      "featured": false,
+      "features": [
+        [
+          "Gabardina de lana",
+          "Resiste la llovizna sin perder caída."
+        ],
+        [
+          "Doble botonadura",
+          "Botones de cuerno natural."
+        ],
+        [
+          "Cinturón con hebilla",
+          "Marca la cintura a tu medida."
+        ],
+        [
+          "Forro de satén",
+          "Se desliza sobre el blazer."
+        ]
+      ],
+      "sizes": [
+        [
+          "XS",
+          2
+        ],
+        [
+          "S",
+          5
+        ],
+        [
+          "M",
+          7
+        ],
+        [
+          "L",
+          5
+        ],
+        [
+          "XL",
+          2
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/trench/front.webp",
+          "alt": "Trench Medianoche azul con cinturón, vista frontal",
+          "width": 598,
+          "height": 1106
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/trench/lifestyle.webp",
+          "alt": "Mujer con el Trench Medianoche en un atelier de nogal de noche",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "abrigo",
+      "name": "Abrigo Ámbar Real",
+      "tagline": "Lana camel para la lluvia",
+      "description": "Abrigo largo de lana camel con solapa de muesca y bolsillos con tapa. Abriga sin perder la línea.",
+      "price_cents": 100000000,
+      "currency": "COP",
+      "theme": "atelier",
+      "base_color": "#b8895b",
+      "stripe_color": "#f3ead9",
+      "trim_color": "#6b4a2e",
+      "accent_color": "#d4a373",
+      "stripe_layout": "sleeves",
+      "category": "formal",
+      "featured": false,
+      "features": [
+        [
+          "Lana y cachemira",
+          "Calidez real en días fríos."
+        ],
+        [
+          "Largo a la rodilla",
+          "Cubre sin pesar."
+        ],
+        [
+          "Bolsillos con tapa",
+          "Clásicos y funcionales."
+        ],
+        [
+          "Acabado repelente",
+          "La llovizna resbala."
+        ]
+      ],
+      "sizes": [
+        [
+          "XS",
+          3
+        ],
+        [
+          "S",
+          6
+        ],
+        [
+          "M",
+          8
+        ],
+        [
+          "L",
+          5
+        ],
+        [
+          "XL",
+          2
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/abrigo/front.webp",
+          "alt": "Abrigo Ámbar Real de lana camel, vista frontal",
+          "width": 494,
+          "height": 956
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/abrigo/lifestyle.webp",
+          "alt": "Mujer con el Abrigo Ámbar Real caminando por una calle mojada al atardecer",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "jersey",
+      "name": "Jersey Pizarra",
+      "tagline": "Merino fino de cuello alto",
+      "description": "Jersey de cuello alto en merino extrafino gris pizarra. Liviano bajo el blazer, cálido por sí solo.",
+      "price_cents": 52000000,
+      "currency": "COP",
+      "theme": "atelier",
+      "base_color": "#45474b",
+      "stripe_color": "#b8b8b8",
+      "trim_color": "#2c2d30",
+      "accent_color": "#b9b4ad",
+      "stripe_layout": "sleeves",
+      "category": "formal",
+      "featured": true,
+      "features": [
+        [
+          "Merino extrafino",
+          "Suave sobre la piel, sin picor."
+        ],
+        [
+          "Cuello alto acanalado",
+          "Mantiene la forma todo el día."
+        ],
+        [
+          "Corte entallado",
+          "Va solo o bajo el blazer."
+        ],
+        [
+          "Regula la temperatura",
+          "Abriga sin sofocar."
+        ]
+      ],
+      "sizes": [
+        [
+          "XS",
+          4
+        ],
+        [
+          "S",
+          7
+        ],
+        [
+          "M",
+          9
+        ],
+        [
+          "L",
+          6
+        ],
+        [
+          "XL",
+          3
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/jersey/front.webp",
+          "alt": "Jersey Pizarra gris de cuello alto, vista frontal",
+          "width": 728,
+          "height": 1061
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/jersey/lifestyle.webp",
+          "alt": "Hombre con el Jersey Pizarra en una butaca de cuero en una biblioteca de nogal",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "camisa",
+      "name": "Camisa Marfil Nº 7",
+      "tagline": "Oxford blanca, siempre",
+      "description": "Camisa oxford de algodón blanco con cuello italiano y puños con botón. La base de cualquier conjunto formal.",
+      "price_cents": 28000000,
+      "currency": "COP",
+      "theme": "atelier",
+      "base_color": "#f2f2f0",
+      "stripe_color": "#1c1c1e",
+      "trim_color": "#c9c9c9",
+      "accent_color": "#cfd8e3",
+      "stripe_layout": "sleeves",
+      "category": "formal",
+      "featured": true,
+      "features": [
+        [
+          "Algodón oxford",
+          "Fresco, firme y fácil de planchar."
+        ],
+        [
+          "Cuello italiano",
+          "Se ve bien con o sin corbata."
+        ],
+        [
+          "Corte entallado",
+          "Sin tela de sobra."
+        ],
+        [
+          "Botones de nácar",
+          "Un detalle de sastrería."
+        ]
+      ],
+      "sizes": [
+        [
+          "S",
+          12
+        ],
+        [
+          "M",
+          15
+        ],
+        [
+          "L",
+          10
+        ],
+        [
+          "XL",
+          6
+        ],
+        [
+          "XXL",
+          0
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/camisa/front.webp",
+          "alt": "Camisa Marfil Nº 7 de algodón oxford blanco, vista frontal",
+          "width": 629,
+          "height": 829
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/camisa/lifestyle.webp",
+          "alt": "Hombre con la Camisa Marfil Nº 7 junto a un ventanal en una oficina moderna",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "pantalon",
+      "name": "Pantalón Sastre Grafito",
+      "tagline": "Pinza simple, raya marcada",
+      "description": "Pantalón de vestir en lana gris grafito con una pinza, raya planchada y bajo con quiebre. La base de todo traje.",
+      "price_cents": 64000000,
+      "currency": "COP",
+      "theme": "atelier",
+      "base_color": "#4a4c50",
+      "stripe_color": "#d9d9d9",
+      "trim_color": "#2c2d30",
+      "accent_color": "#a9adb3",
+      "stripe_layout": "sleeves",
+      "category": "formal",
+      "featured": false,
+      "features": [
+        [
+          "Lana peinada",
+          "Cae limpio y no se arruga."
+        ],
+        [
+          "Pinza simple",
+          "Comodidad sin perder la línea."
+        ],
+        [
+          "Raya permanente",
+          "Planchado que dura."
+        ],
+        [
+          "Bajo con quiebre",
+          "Justo sobre el zapato."
+        ]
+      ],
+      "sizes": [
+        [
+          "XS",
+          3
+        ],
+        [
+          "S",
+          6
+        ],
+        [
+          "M",
+          9
+        ],
+        [
+          "L",
+          6
+        ],
+        [
+          "XL",
+          3
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/pantalon/front.webp",
+          "alt": "Pantalón Sastre Grafito de lana gris, vista frontal",
+          "width": 531,
+          "height": 1116
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/pantalon/lifestyle.webp",
+          "alt": "Hombre con el Pantalón Sastre Grafito caminando por un atelier de nogal",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "chaleco",
+      "name": "Chaleco Tweed Roble",
+      "tagline": "Espiga de lana, cinco botones",
+      "description": "Chaleco de tweed de lana en espiga marrón roble, cinco botones de cuerno y espalda de satén. Sastrería clásica con carácter.",
+      "price_cents": 56000000,
+      "currency": "COP",
+      "theme": "atelier",
+      "base_color": "#6e5238",
+      "stripe_color": "#e6d6bd",
+      "trim_color": "#3d2c1d",
+      "accent_color": "#c08a4f",
+      "stripe_layout": "sleeves",
+      "category": "formal",
+      "featured": false,
+      "features": [
+        [
+          "Tweed en espiga",
+          "Lana con textura y abrigo."
+        ],
+        [
+          "Botones de cuerno",
+          "Cinco, cosidos a mano."
+        ],
+        [
+          "Espalda de satén",
+          "Se ajusta con hebilla."
+        ],
+        [
+          "Dos bolsillos de ojal",
+          "Para el reloj de bolsillo o la pluma."
+        ]
+      ],
+      "sizes": [
+        [
+          "XS",
+          2
+        ],
+        [
+          "S",
+          5
+        ],
+        [
+          "M",
+          7
+        ],
+        [
+          "L",
+          5
+        ],
+        [
+          "XL",
+          2
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/chaleco/front.webp",
+          "alt": "Chaleco Tweed Roble marrón en espiga, vista frontal",
+          "width": 582,
+          "height": 1070
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/chaleco/lifestyle.webp",
+          "alt": "Hombre con el Chaleco Tweed Roble en una mesa de corte de sastre",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "polo",
+      "name": "Polo de Punto Marino",
+      "tagline": "Punto fino, cuello de camisa",
+      "description": "Polo de punto fino azul marino con tres botones y cuello acanalado. Elegante bajo una chaqueta, impecable solo.",
+      "price_cents": 36000000,
+      "currency": "COP",
+      "theme": "atelier",
+      "base_color": "#1e2a44",
+      "stripe_color": "#d8dde6",
+      "trim_color": "#121a2c",
+      "accent_color": "#7f95c2",
+      "stripe_layout": "sleeves",
+      "category": "formal",
+      "featured": false,
+      "features": [
+        [
+          "Punto fino de algodón",
+          "Fresco y con caída."
+        ],
+        [
+          "Cuello acanalado",
+          "Mantiene la forma."
+        ],
+        [
+          "Tres botones",
+          "Tapeta limpia."
+        ],
+        [
+          "Corte entallado",
+          "Va bajo el blazer."
+        ]
+      ],
+      "sizes": [
+        [
+          "XS",
+          3
+        ],
+        [
+          "S",
+          6
+        ],
+        [
+          "M",
+          9
+        ],
+        [
+          "L",
+          6
+        ],
+        [
+          "XL",
+          3
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/polo/front.webp",
+          "alt": "Polo de Punto Marino azul, vista frontal",
+          "width": 745,
+          "height": 971
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/polo/lifestyle.webp",
+          "alt": "Hombre con el Polo de Punto Marino en una butaca de cuero al atardecer",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "meridiano",
+      "name": "Meridiano 40",
+      "tagline": "Acero, esfera negra, cuero",
+      "description": "Reloj de vestir de 40 mm en acero pulido, esfera negra rayos de sol con índices de bastón y correa de becerro negra.",
+      "price_cents": 168000000,
+      "currency": "COP",
+      "theme": "atelier",
+      "base_color": "#1a1b1e",
+      "stripe_color": "#d7d9dc",
+      "trim_color": "#0e0f10",
+      "accent_color": "#c9ced6",
+      "stripe_layout": "sleeves",
+      "category": "relojeria",
+      "featured": false,
+      "features": [
+        [
+          "Caja de acero 40 mm",
+          "Pulido espejo, perfil delgado."
+        ],
+        [
+          "Esfera rayos de sol",
+          "La luz recorre el negro."
+        ],
+        [
+          "Cristal de zafiro",
+          "Resistente a rayas."
+        ],
+        [
+          "Correa de becerro",
+          "Hebilla de acero grabada."
+        ]
+      ],
+      "sizes": [
+        [
+          "Correa S",
+          3
+        ],
+        [
+          "Correa M",
+          5
+        ],
+        [
+          "Correa L",
+          3
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/meridiano/front.webp",
+          "alt": "Reloj Meridiano 40 de acero con esfera negra y correa de cuero",
+          "width": 542,
+          "height": 1038
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/meridiano/lifestyle.webp",
+          "alt": "Muñeca con el reloj Meridiano 40, puño blanco y traje gris junto a una pluma",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "aurum",
+      "name": "Aurum 38",
+      "tagline": "Oro, esfera champaña",
+      "description": "Reloj de vestir de 38 mm en caja dorada, esfera champaña con agujas delfín y correa de aligátor marrón.",
+      "price_cents": 272000000,
+      "currency": "COP",
+      "theme": "atelier",
+      "base_color": "#c9a65a",
+      "stripe_color": "#f3e6c4",
+      "trim_color": "#6b3f22",
+      "accent_color": "#d8b26a",
+      "stripe_layout": "sleeves",
+      "category": "relojeria",
+      "featured": false,
+      "features": [
+        [
+          "Caja dorada 38 mm",
+          "Proporción clásica de vestir."
+        ],
+        [
+          "Esfera champaña",
+          "Agujas delfín e índices aplicados."
+        ],
+        [
+          "Correa de aligátor",
+          "Marrón coñac, hecha a mano."
+        ],
+        [
+          "Movimiento automático",
+          "Reserva de marcha de 42 horas."
+        ]
+      ],
+      "sizes": [
+        [
+          "Correa S",
+          2
+        ],
+        [
+          "Correa M",
+          4
+        ],
+        [
+          "Correa L",
+          2
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/aurum/front.webp",
+          "alt": "Reloj Aurum 38 dorado con esfera champaña y correa marrón",
+          "width": 532,
+          "height": 1264
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/aurum/lifestyle.webp",
+          "alt": "Hombre ajustando el puño de un traje azul con el reloj Aurum 38",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "onix",
+      "name": "Ónix Cronógrafo 42",
+      "tagline": "Cerámica negra, tres contadores",
+      "description": "Cronógrafo de 42 mm en cerámica negra mate, tres contadores y brazalete de eslabones de cerámica. Sobrio y técnico.",
+      "price_cents": 236000000,
+      "currency": "COP",
+      "theme": "pavilion",
+      "base_color": "#121214",
+      "stripe_color": "#8e9196",
+      "trim_color": "#050506",
+      "accent_color": "#9aa3ad",
+      "stripe_layout": "sleeves",
+      "category": "relojeria",
+      "featured": false,
+      "features": [
+        [
+          "Cerámica negra mate",
+          "No se raya ni pierde color."
+        ],
+        [
+          "Cronógrafo",
+          "Tres contadores tono sobre tono."
+        ],
+        [
+          "Brazalete cerámico",
+          "Liviano y frío al tacto."
+        ],
+        [
+          "Hermético 100 m",
+          "Listo para todo."
+        ]
+      ],
+      "sizes": [
+        [
+          "Correa S",
+          3
+        ],
+        [
+          "Correa M",
+          4
+        ],
+        [
+          "Correa L",
+          3
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/onix/front.webp",
+          "alt": "Reloj Ónix Cronógrafo 42 de cerámica negra con brazalete",
+          "width": 556,
+          "height": 1000
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/onix/lifestyle.webp",
+          "alt": "Muñeca con el Ónix Cronógrafo 42 sobre un muro de concreto de noche",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "grafito",
+      "name": "Onyx Eclipse",
+      "tagline": "Hecha para la calle",
+      "description": "Chaqueta de pista en gris grafito con franjas claras en las mangas. Nació en los callejones y se queda ahí.",
+      "price_cents": 48000000,
+      "currency": "COP",
+      "theme": "pavilion",
+      "base_color": "#3b3e42",
+      "stripe_color": "#dcdcdc",
+      "trim_color": "#18191b",
+      "accent_color": "#5fa7c9",
+      "stripe_layout": "sleeves",
+      "features": [
+        [
+          "Hecha desde la calle",
+          "Diseñada en el asfalto, lista para cualquier esquina."
+        ],
+        [
+          "Tejido resistente al clima",
+          "La llovizna no te detiene."
+        ],
+        [
+          "Puños acanalados",
+          "Ajuste firme que guarda el calor."
+        ],
+        [
+          "Bolsillos con cierre oculto",
+          "Lo esencial siempre seguro."
+        ]
+      ],
+      "sizes": [
+        [
+          "XS",
+          6
+        ],
+        [
+          "S",
+          12
+        ],
+        [
+          "M",
+          15
+        ],
+        [
+          "L",
+          10
+        ],
+        [
+          "XL",
+          0
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/grafito/front.webp",
+          "alt": "Chaqueta Onyx Eclipse, vista frontal",
+          "width": 684,
+          "height": 895
+        },
+        {
+          "kind": "back",
+          "url": "/images/products/grafito/back.webp",
+          "alt": "Chaqueta Onyx Eclipse, vista de la espalda",
+          "width": 581,
+          "height": 866
+        },
+        {
+          "kind": "detail",
+          "url": "/images/products/grafito/detail.webp",
+          "alt": "Detalle de gotas de agua sobre la tela repelente de la Onyx Eclipse",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/grafito/lifestyle.webp",
+          "alt": "Mujer con la chaqueta Onyx Eclipse en un pabellón de concreto de noche, junto a una ranura de luz",
+          "width": 832,
+          "height": 1248
+        }
+      ],
+      "category": "chaquetas",
+      "featured": false
+    },
+    {
+      "slug": "carmesi",
+      "name": "Rubí Imperial",
+      "tagline": "La pieza central",
+      "description": "Rojo profundo con franjas en espalda y mangas. Relleno aislante para las noches largas de la ciudad.",
+      "price_cents": 52000000,
+      "currency": "COP",
+      "theme": "pavilion",
+      "base_color": "#8f1117",
+      "stripe_color": "#f2f2f2",
+      "trim_color": "#111111",
+      "accent_color": "#ff2a2a",
+      "stripe_layout": "both",
+      "features": [
+        [
+          "Relleno aislante ligero",
+          "Calidez sin volumen."
+        ],
+        [
+          "Accesorios esenciales",
+          "Todo a mano, nada que estorbe."
+        ],
+        [
+          "Forro térmico interior",
+          "Mantiene el calor en movimiento."
+        ],
+        [
+          "Franjas reflectivas",
+          "Te ven cuando cae la noche."
+        ]
+      ],
+      "sizes": [
+        [
+          "XS",
+          4
+        ],
+        [
+          "S",
+          9
+        ],
+        [
+          "M",
+          14
+        ],
+        [
+          "L",
+          11
+        ],
+        [
+          "XL",
+          5
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/carmesi/front.webp",
+          "alt": "Chaqueta Rubí Imperial, vista frontal",
+          "width": 596,
+          "height": 836
+        },
+        {
+          "kind": "back",
+          "url": "/images/products/carmesi/back.webp",
+          "alt": "Chaqueta Rubí Imperial, vista de la espalda con franjas",
+          "width": 688,
+          "height": 918
+        },
+        {
+          "kind": "detail",
+          "url": "/images/products/carmesi/detail.webp",
+          "alt": "Detalle del cierre metálico, el puño acanalado y las franjas de la Rubí Imperial",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/carmesi/lifestyle.webp",
+          "alt": "Hombre con la chaqueta Rubí Imperial junto a un espejo de agua en un pabellón de concreto al anochecer",
+          "width": 832,
+          "height": 1248
+        }
+      ],
+      "category": "chaquetas",
+      "featured": false
+    },
+    {
+      "slug": "glaciar",
+      "name": "Perla Boreal",
+      "tagline": "Silencio de estudio",
+      "description": "Blanco glaciar con franja roja en las mangas. Liviana, limpia y cálida por dentro.",
+      "price_cents": 48000000,
+      "currency": "COP",
+      "theme": "pavilion",
+      "base_color": "#ececec",
+      "stripe_color": "#c4161c",
+      "trim_color": "#262626",
+      "accent_color": "#dfe7f0",
+      "stripe_layout": "sleeves",
+      "features": [
+        [
+          "Corte de pista clásico",
+          "Silueta limpia de estudio a escenario."
+        ],
+        [
+          "Tela ligera de alto rendimiento",
+          "Respira mientras te mueves."
+        ],
+        [
+          "Forro cepillado suave",
+          "Cálido para las noches largas."
+        ],
+        [
+          "Detalles en contraste",
+          "Una franja roja que lo dice todo."
+        ]
+      ],
+      "sizes": [
+        [
+          "XS",
+          8
+        ],
+        [
+          "S",
+          10
+        ],
+        [
+          "M",
+          0
+        ],
+        [
+          "L",
+          7
+        ],
+        [
+          "XL",
+          3
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/glaciar/front.webp",
+          "alt": "Chaqueta Perla Boreal, vista frontal",
+          "width": 622,
+          "height": 897
+        },
+        {
+          "kind": "back",
+          "url": "/images/products/glaciar/back.webp",
+          "alt": "Chaqueta Perla Boreal, vista de la espalda",
+          "width": 644,
+          "height": 856
+        },
+        {
+          "kind": "detail",
+          "url": "/images/products/glaciar/detail.webp",
+          "alt": "Detalle de la tela cepillada blanca, la franja roja y el puño gris carbón de la Perla Boreal",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/glaciar/lifestyle.webp",
+          "alt": "Hombre con la chaqueta Perla Boreal sentado en una banca de concreto bajo un tragaluz",
+          "width": 832,
+          "height": 1248
+        }
+      ],
+      "category": "chaquetas",
+      "featured": false
+    },
+    {
+      "slug": "esmeralda",
+      "name": "Esmeralda Regia",
+      "tagline": "Verde profundo, franjas crema",
+      "description": "Chaqueta de pista verde esmeralda con franjas crema en las mangas, cuello y puños acanalados negros y cierre metálico.",
+      "price_cents": 52000000,
+      "currency": "COP",
+      "theme": "pavilion",
+      "base_color": "#0f5a3a",
+      "stripe_color": "#f1ead8",
+      "trim_color": "#111213",
+      "accent_color": "#3fbf86",
+      "stripe_layout": "sleeves",
+      "category": "chaquetas",
+      "featured": false,
+      "features": [
+        [
+          "Tejido técnico satinado",
+          "Brillo sutil que capta la luz."
+        ],
+        [
+          "Franjas tejidas",
+          "No se despegan ni se agrietan."
+        ],
+        [
+          "Cierre metálico",
+          "Recorrido suave de punta a punta."
+        ],
+        [
+          "Puños acanalados",
+          "Ajuste firme que guarda el calor."
+        ]
+      ],
+      "sizes": [
+        [
+          "XS",
+          3
+        ],
+        [
+          "S",
+          6
+        ],
+        [
+          "M",
+          8
+        ],
+        [
+          "L",
+          6
+        ],
+        [
+          "XL",
+          3
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/esmeralda/front.webp",
+          "alt": "Chaqueta Esmeralda Regia verde con franjas crema, vista frontal",
+          "width": 673,
+          "height": 901
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/esmeralda/lifestyle.webp",
+          "alt": "Hombre con la chaqueta Esmeralda Regia en las escaleras de un pabellón de concreto",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "hoodie",
+      "name": "Hoodie Alabastro",
+      "tagline": "Algodón pesado, corte amplio",
+      "description": "Hoodie oversize de felpa de algodón color hueso, hombros caídos y bolsillo canguro. Pesado, suave y amplio.",
+      "price_cents": 36000000,
+      "currency": "COP",
+      "theme": "loft",
+      "base_color": "#e9e3d6",
+      "stripe_color": "#3a3a3a",
+      "trim_color": "#cfc6b4",
+      "accent_color": "#d9cfbd",
+      "stripe_layout": "sleeves",
+      "category": "oversize",
+      "featured": false,
+      "features": [
+        [
+          "Felpa de 450 g",
+          "Peso que se siente de calidad."
+        ],
+        [
+          "Hombros caídos",
+          "Silueta amplia y relajada."
+        ],
+        [
+          "Capucha doble",
+          "Mantiene la forma."
+        ],
+        [
+          "Puños acanalados",
+          "Cierra bien sin apretar."
+        ]
+      ],
+      "sizes": [
+        [
+          "S",
+          9
+        ],
+        [
+          "M",
+          14
+        ],
+        [
+          "L",
+          12
+        ],
+        [
+          "XL",
+          7
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/hoodie/front.webp",
+          "alt": "Hoodie Alabastro oversize color hueso, vista frontal",
+          "width": 752,
+          "height": 956
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/hoodie/lifestyle.webp",
+          "alt": "Mujer con el Hoodie Alabastro sentada en una banca de travertino frente a un ventanal con la ciudad de noche",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "camiseta",
+      "name": "Camiseta Ébano",
+      "tagline": "Negro lavado, caja amplia",
+      "description": "Camiseta oversize de algodón pesado en negro lavado, cuello grueso y mangas hasta el codo.",
+      "price_cents": 20000000,
+      "currency": "COP",
+      "theme": "loft",
+      "base_color": "#2b2b2b",
+      "stripe_color": "#e6e6e6",
+      "trim_color": "#111111",
+      "accent_color": "#9aa4ad",
+      "stripe_layout": "sleeves",
+      "category": "oversize",
+      "featured": false,
+      "features": [
+        [
+          "Algodón de 260 g",
+          "No transparenta ni se deforma."
+        ],
+        [
+          "Lavado a piedra",
+          "Color vivido desde el primer día."
+        ],
+        [
+          "Cuello acanalado grueso",
+          "Mantiene su forma."
+        ],
+        [
+          "Corte boxy",
+          "Ancha y a la cadera."
+        ]
+      ],
+      "sizes": [
+        [
+          "S",
+          20
+        ],
+        [
+          "M",
+          25
+        ],
+        [
+          "L",
+          18
+        ],
+        [
+          "XL",
+          10
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/camiseta/front.webp",
+          "alt": "Camiseta Ébano oversize en negro lavado, vista frontal",
+          "width": 807,
+          "height": 926
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/camiseta/lifestyle.webp",
+          "alt": "Hombre con la Camiseta Ébano apoyado en una columna de concreto en un loft con vista a la ciudad",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "sobrecamisa",
+      "name": "Sobrecamisa Arena",
+      "tagline": "Sarga gruesa, corte amplio",
+      "description": "Sobrecamisa oversize de sarga de algodón color arena, con dos bolsillos de tapa y botones de cuerno. Entre camisa y chaqueta.",
+      "price_cents": 40000000,
+      "currency": "COP",
+      "theme": "loft",
+      "base_color": "#cbb895",
+      "stripe_color": "#efe6d4",
+      "trim_color": "#8a7a5c",
+      "accent_color": "#d8c3a0",
+      "stripe_layout": "sleeves",
+      "category": "oversize",
+      "featured": false,
+      "features": [
+        [
+          "Sarga de algodón pesada",
+          "Cuerpo firme que mejora con el uso."
+        ],
+        [
+          "Hombros caídos",
+          "Caída amplia sin perder forma."
+        ],
+        [
+          "Bolsillos con tapa",
+          "Dos en el pecho, con botón."
+        ],
+        [
+          "Capa intermedia",
+          "Sobre una camiseta o bajo un abrigo."
+        ]
+      ],
+      "sizes": [
+        [
+          "XS",
+          3
+        ],
+        [
+          "S",
+          6
+        ],
+        [
+          "M",
+          9
+        ],
+        [
+          "L",
+          7
+        ],
+        [
+          "XL",
+          4
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/sobrecamisa/front.webp",
+          "alt": "Sobrecamisa Arena color arena con bolsillos, vista frontal",
+          "width": 713,
+          "height": 959
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/sobrecamisa/lifestyle.webp",
+          "alt": "Hombre con la Sobrecamisa Arena en una banca de travertino en un loft de noche",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "bomber",
+      "name": "Bomber Jade Noir",
+      "tagline": "Verde oliva, noche urbana",
+      "description": "Bomber oversize de nailon verde oliva con relleno ligero, cuello y puños acanalados y bolsillo utilitario en la manga.",
+      "price_cents": 64000000,
+      "currency": "COP",
+      "theme": "loft",
+      "base_color": "#4b5235",
+      "stripe_color": "#e8e8e0",
+      "trim_color": "#111111",
+      "accent_color": "#8f9d5a",
+      "stripe_layout": "sleeves",
+      "category": "oversize",
+      "featured": false,
+      "features": [
+        [
+          "Nailon resistente",
+          "Corta el viento."
+        ],
+        [
+          "Relleno ligero",
+          "Abriga sin abultar."
+        ],
+        [
+          "Bolsillo en la manga",
+          "El detalle clásico del bomber."
+        ],
+        [
+          "Corte oversize",
+          "Hombros caídos y caída amplia."
+        ]
+      ],
+      "sizes": [
+        [
+          "S",
+          6
+        ],
+        [
+          "M",
+          10
+        ],
+        [
+          "L",
+          9
+        ],
+        [
+          "XL",
+          4
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/bomber/front.webp",
+          "alt": "Bomber Jade Noir oversize verde oliva, vista frontal",
+          "width": 694,
+          "height": 886
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/bomber/lifestyle.webp",
+          "alt": "Hombre con el Bomber Jade Noir junto al ventanal de acero de un loft de noche",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    },
+    {
+      "slug": "puffer",
+      "name": "Puffer Obsidiana",
+      "tagline": "Volumen negro mate",
+      "description": "Chaqueta acolchada oversize negro mate con cuello alto y cierre oculto. Canales anchos de relleno liviano para el frío de verdad.",
+      "price_cents": 88000000,
+      "currency": "COP",
+      "theme": "loft",
+      "base_color": "#151517",
+      "stripe_color": "#3a3a3e",
+      "trim_color": "#0b0b0c",
+      "accent_color": "#8fa6d6",
+      "stripe_layout": "sleeves",
+      "category": "oversize",
+      "featured": false,
+      "features": [
+        [
+          "Relleno liviano",
+          "Abriga mucho, pesa poco."
+        ],
+        [
+          "Cuello alto",
+          "Protege del viento hasta el mentón."
+        ],
+        [
+          "Cierre oculto",
+          "Línea limpia, sin cortes."
+        ],
+        [
+          "Exterior repelente",
+          "La lluvia resbala."
+        ]
+      ],
+      "sizes": [
+        [
+          "XS",
+          2
+        ],
+        [
+          "S",
+          5
+        ],
+        [
+          "M",
+          8
+        ],
+        [
+          "L",
+          6
+        ],
+        [
+          "XL",
+          3
+        ]
+      ],
+      "images": [
+        {
+          "kind": "front",
+          "url": "/images/products/puffer/front.webp",
+          "alt": "Puffer Obsidiana negro mate de cuello alto, vista frontal",
+          "width": 695,
+          "height": 961
+        },
+        {
+          "kind": "lifestyle",
+          "url": "/images/products/puffer/lifestyle.webp",
+          "alt": "Mujer con el Puffer Obsidiana junto a una columna en un loft al anochecer",
+          "width": 832,
+          "height": 1248
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "slug": "formal",
+      "name": "Formal",
+      "description": "Sastrería y básicos de lana y algodón para el día y la noche."
+    },
+    {
+      "slug": "chaquetas",
+      "name": "Chaquetas de pista",
+      "description": "Chaquetas de pista de la colección Obsidiana."
+    },
+    {
+      "slug": "oversize",
+      "name": "Oversize",
+      "description": "Siluetas amplias, telas pesadas y hombros caídos."
+    },
+    {
+      "slug": "relojeria",
+      "name": "Relojería",
+      "description": "Relojes de vestir y cronógrafos de la casa."
+    }
+  ]
+}

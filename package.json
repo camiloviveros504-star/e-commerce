@@ -1,0 +1,47 @@
+{
+  "name": "montevar-3d-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ecommerce 3D inmersivo: showroom con transiciones de cámara, mundos por producto y personalización.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "concurrently -n api,web -c yellow,cyan \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "node --watch server/index.js",
+    "dev:web": "vite",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "db:migrate": "node server/db/cli.js migrate",
+    "db:seed": "node server/db/cli.js seed",
+    "db:reset": "node server/db/cli.js reset",
+    "test": "vitest run",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@fontsource/anton": "^5.1.0",
+    "@fontsource/cinzel": "^5.2.8",
+    "@fontsource/inter": "^5.1.0",
+    "@fontsource/space-mono": "^5.1.0",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "gsap": "^3.13.0",
+    "helmet": "^8.0.0",
+    "lenis": "^1.1.13",
+    "three": "^0.169.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@imgly/background-removal-node": "^1.4.5",
+    "concurrently": "^9.0.1",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0",
+    "opentype.js": "^1.3.4",
+    "sharp": "^0.33.5",
+    "supertest": "^7.0.0",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.4"
+  }
+}

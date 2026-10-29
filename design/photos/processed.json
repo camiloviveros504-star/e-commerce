@@ -1,0 +1,226 @@
+{
+  "abrigo": {
+    "front": {
+      "width": 494,
+      "height": 956
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "aurum": {
+    "front": {
+      "width": 532,
+      "height": 1264
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "blazer": {
+    "front": {
+      "width": 623,
+      "height": 892
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "bomber": {
+    "front": {
+      "width": 694,
+      "height": 886
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "camisa": {
+    "front": {
+      "width": 629,
+      "height": 829
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "camiseta": {
+    "front": {
+      "width": 807,
+      "height": 926
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "carmesi": {
+    "front": {
+      "width": 596,
+      "height": 836
+    },
+    "back": {
+      "width": 688,
+      "height": 918
+    },
+    "detail": {
+      "width": 1024,
+      "height": 1024
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "chaleco": {
+    "front": {
+      "width": 582,
+      "height": 1070
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "esmeralda": {
+    "front": {
+      "width": 673,
+      "height": 901
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "glaciar": {
+    "front": {
+      "width": 622,
+      "height": 897
+    },
+    "back": {
+      "width": 644,
+      "height": 856
+    },
+    "detail": {
+      "width": 1024,
+      "height": 1024
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "grafito": {
+    "front": {
+      "width": 684,
+      "height": 895
+    },
+    "back": {
+      "width": 581,
+      "height": 866
+    },
+    "detail": {
+      "width": 1024,
+      "height": 1024
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "hoodie": {
+    "front": {
+      "width": 752,
+      "height": 956
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "jersey": {
+    "front": {
+      "width": 728,
+      "height": 1061
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "meridiano": {
+    "front": {
+      "width": 542,
+      "height": 1038
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "onix": {
+    "front": {
+      "width": 556,
+      "height": 1000
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "pantalon": {
+    "front": {
+      "width": 531,
+      "height": 1116
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "polo": {
+    "front": {
+      "width": 745,
+      "height": 971
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "puffer": {
+    "front": {
+      "width": 695,
+      "height": 961
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "sobrecamisa": {
+    "front": {
+      "width": 713,
+      "height": 959
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  },
+  "trench": {
+    "front": {
+      "width": 598,
+      "height": 1106
+    },
+    "lifestyle": {
+      "width": 832,
+      "height": 1248
+    }
+  }
+}

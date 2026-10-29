@@ -1,0 +1,235 @@
+{
+  "_note": "Fotos de producto generadas con Bing Image Creator (modelo MAI-Image-2.5, formato 2:3, 832x1248). Originales en raw/, procesadas con `node scripts/process-photos.mjs` (recorte de fondo con IA local) hacia client/public/images/products/. Para reemplazar una: guárdala en raw/<id>.jpg, ejecuta el script y actualiza el catálogo (server/db/seeds/catalog.json) con `npm run db:seed`.",
+  "jobs": [
+    {
+      "id": "carmesi-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium crimson red zip-up track jacket, two off-white stripes down the outer side of each sleeve, black ribbed cuffs and black ribbed hem, silver zipper closed, small white mountain-peak logo on left chest, no person, centered with empty margin around, plain flat light grey background, soft studio light, photorealistic"
+    },
+    {
+      "id": "grafito-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium graphite dark grey zip-up track jacket, matte water-resistant fabric, two light grey stripes down the outer side of each sleeve, black ribbed cuffs and black ribbed hem, stand-up collar, silver zipper closed, small light grey mountain-peak logo on left chest, no person, centered with empty margin around, plain flat light grey background, soft studio light, photorealistic"
+    },
+    {
+      "id": "glaciar-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium glacier white zip-up track jacket, soft brushed fabric, one bold red stripe down the outer side of each sleeve, dark charcoal ribbed cuffs and dark charcoal ribbed hem, stand-up collar, silver zipper closed, small red mountain-peak logo on left chest, no person, centered with empty margin around, plain flat dark charcoal grey background, soft studio light, photorealistic"
+    },
+    {
+      "id": "carmesi-back",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight BACK view seen from behind of a premium crimson red zip-up track jacket, stand-up collar from behind, two off-white stripes down the outer side of each sleeve, two off-white vertical stripes down the center of the back from mid-back to hem, black ribbed cuffs and black ribbed hem, plain upper back with no print, no person, centered with empty margin around, plain flat light grey background, soft studio light, photorealistic"
+    },
+    {
+      "id": "grafito-back",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight BACK view seen from behind of a premium graphite dark grey zip-up track jacket, matte water-resistant fabric, stand-up collar from behind, two light grey stripes down the outer side of each sleeve, black ribbed cuffs and black ribbed hem, plain clean back panel with no print, no person, centered with empty margin around, plain flat light grey background, soft studio light, photorealistic"
+    },
+    {
+      "id": "glaciar-back",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight BACK view seen from behind of a premium glacier white zip-up track jacket, soft brushed fabric, stand-up collar from behind, one bold red stripe down the outer side of each sleeve, dark charcoal ribbed cuffs and hem, plain clean back panel with no print, no person, centered with empty margin around, plain flat dark charcoal grey background, soft studio light, photorealistic"
+    },
+    {
+      "id": "carmesi-detail",
+      "status": "lista",
+      "prompt": "Macro product detail photo of a crimson red technical track jacket: close-up of the silver zipper pull at the stand-up collar, crimson fabric weave, off-white sleeve stripes and black ribbed cuff, dramatic soft side light, dark background, photorealistic"
+    },
+    {
+      "id": "grafito-detail",
+      "status": "lista",
+      "prompt": "Macro product detail photo of a graphite dark grey water-resistant track jacket: water droplets beading on the matte fabric next to a light grey sleeve stripe and black ribbed cuff, cool side light, dark background, photorealistic"
+    },
+    {
+      "id": "glaciar-detail",
+      "status": "lista",
+      "prompt": "Macro product detail photo of a glacier white track jacket: soft brushed white fabric, bold red sleeve stripe and dark charcoal ribbed cuff, bright soft natural light, light background, photorealistic"
+    },
+    {
+      "id": "carmesi-lifestyle",
+      "status": "lista",
+      "prompt": "A man wearing a crimson red track jacket with off-white sleeve stripes and black ribbed cuffs, standing beside a still shallow reflecting pool inside an architectural concrete pavilion at dusk, smooth board-formed concrete walls with round tie holes, a tall vertical slit of warm light glowing in the wall, his reflection in the dark water, luxury fashion campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "grafito-lifestyle",
+      "status": "lista",
+      "prompt": "A woman wearing a graphite grey track jacket with light grey sleeve stripes and black ribbed cuffs, standing calmly inside a minimalist brutalist concrete pavilion at night, board-formed concrete walls with small round tie holes, a thin vertical slit of cool white light in the wall behind her, moonlight casting long geometric shadows on polished concrete floor, luxury fashion campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "glaciar-lifestyle",
+      "status": "lista",
+      "prompt": "A man wearing a white track jacket with red sleeve stripes and charcoal ribbed cuffs, sitting on a long monolithic concrete bench in a quiet minimalist concrete gallery, soft overcast daylight falling from a narrow skylight, three smooth black basalt stones on the bench, luxury fashion campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "blazer-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium charcoal grey wool single-breasted blazer, notch lapels, two dark horn buttons fastened, flap pockets, sharp tailored shoulders, no person, plain flat light grey background, soft studio light, luxury menswear catalog, photorealistic"
+    },
+    {
+      "id": "abrigo-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium camel wool long overcoat, notch lapels, single-breasted, knee length, welt pockets, no person, plain flat light grey background, soft studio light, luxury menswear catalog, photorealistic"
+    },
+    {
+      "id": "camisa-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium crisp white cotton oxford dress shirt, spread collar, buttoned cuffs, tailored fit, no person, plain flat dark charcoal grey background, soft studio light, photorealistic"
+    },
+    {
+      "id": "hoodie-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium oversized heavyweight hoodie in bone off-white cotton fleece, dropped shoulders, kangaroo pocket, no logo, no person, plain flat dark charcoal grey background, photorealistic"
+    },
+    {
+      "id": "camiseta-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium oversized heavyweight t-shirt in washed black cotton, dropped shoulders, boxy wide fit, no print, no person, plain flat light grey background, photorealistic"
+    },
+    {
+      "id": "bomber-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium oversized olive green nylon bomber jacket, ribbed black collar cuffs and hem, sleeve utility pocket, no logo, no person, plain flat light grey background, photorealistic"
+    },
+    {
+      "id": "blazer-lifestyle",
+      "status": "lista",
+      "prompt": "Elegant editorial menswear photo, a young man wearing a charcoal grey wool blazer over a black knit turtleneck in a dark luxury lounge with warm brass lights and marble walls, photorealistic"
+    },
+    {
+      "id": "abrigo-lifestyle",
+      "status": "lista",
+      "prompt": "Elegant editorial fashion photo, a young woman wearing a long camel wool overcoat walking on a rainy city street at dusk, wet pavement reflecting warm shop lights, photorealistic"
+    },
+    {
+      "id": "camisa-lifestyle",
+      "status": "lista",
+      "prompt": "Elegant editorial menswear photo, a young man wearing a crisp white dress shirt and charcoal trousers by a tall window in a minimalist modern office, soft morning daylight, photorealistic"
+    },
+    {
+      "id": "hoodie-lifestyle",
+      "status": "lista",
+      "prompt": "A woman wearing an oversized bone-colored heavyweight cotton hoodie with dropped shoulders, sitting on a travertine bench in an elegant industrial loft at night, tall black steel-framed windows behind her with blurred city lights, a brass arc floor lamp casting warm light, art books and a ceramic vase on the bench, luxury fashion campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "camiseta-lifestyle",
+      "status": "lista",
+      "prompt": "A man wearing an oversized washed black boxy t-shirt, leaning against a smooth concrete column in a refined industrial loft at blue hour, huge black steel-framed window wall behind him with the city skyline lighting up, polished concrete floor, minimal furniture, luxury fashion campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "bomber-lifestyle",
+      "status": "lista",
+      "prompt": "A man wearing an olive green bomber jacket with black ribbed collar and cuffs and a silver zip, standing by a large black steel-framed window in a luxurious industrial loft at night, city lights bokeh outside, warm light from a brass arc lamp, polished concrete floor and a wool rug, luxury fashion campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "trench-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium midnight navy double-breasted trench coat, wide lapels, belted waist with buckle, epaulettes, knee length, horn buttons, no person, plain flat light grey background, soft studio light, luxury fashion catalog, photorealistic"
+    },
+    {
+      "id": "trench-lifestyle",
+      "status": "lista",
+      "prompt": "A woman wearing a midnight navy belted double-breasted trench coat, standing in an elegant walnut-paneled tailoring atelier at night, tall arched window with sheer curtains behind her, warm brass pendant lights, black marble floor, luxury fashion campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "jersey-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium charcoal grey fine merino wool turtleneck sweater, ribbed high neck, ribbed cuffs and hem, slim tailored fit, no person, plain flat light grey background, soft studio light, luxury fashion catalog, photorealistic"
+    },
+    {
+      "id": "jersey-lifestyle",
+      "status": "lista",
+      "prompt": "A man wearing a charcoal grey merino turtleneck sweater and dark tailored trousers, sitting in a cognac leather armchair in a walnut-paneled library lounge at night, warm brass lamp light, books and fabric bolts on a console, luxury fashion campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "esmeralda-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium emerald green track jacket with cream white stripes down both sleeves, black ribbed collar and cuffs, full-length silver zip, small chest logo, no person, plain flat light grey background, soft studio light, luxury fashion catalog, photorealistic"
+    },
+    {
+      "id": "esmeralda-lifestyle",
+      "status": "lista",
+      "prompt": "A man wearing an emerald green track jacket with cream sleeve stripes and black ribbed cuffs, standing on wide concrete steps inside a minimalist brutalist concrete pavilion at night, a tall vertical slit of soft green-white light in the wall, long geometric shadows, luxury fashion campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "sobrecamisa-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium oversized sand beige heavyweight cotton twill overshirt, two chest flap pockets, horn buttons, dropped shoulders, boxy fit, no person, plain flat dark charcoal grey background, soft studio light, luxury fashion catalog, photorealistic"
+    },
+    {
+      "id": "sobrecamisa-lifestyle",
+      "status": "lista",
+      "prompt": "A man wearing an oversized sand beige cotton overshirt over a white t-shirt, sitting on a travertine bench by a huge black steel-framed window in an elegant industrial loft at night, city lights outside, brass arc lamp glow, luxury fashion campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "puffer-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium oversized matte black puffer jacket, high stand collar, wide horizontal quilted channels, hidden zip, dropped shoulders, no person, plain flat light grey background, soft studio light, luxury fashion catalog, photorealistic"
+    },
+    {
+      "id": "puffer-lifestyle",
+      "status": "lista",
+      "prompt": "A woman wearing an oversized matte black puffer jacket, standing beside a smooth concrete column in a refined industrial loft at blue hour, black steel-framed window wall with the city skyline behind her, polished concrete floor, luxury fashion campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "pantalon-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of premium charcoal grey wool tailored dress trousers, single front pleat, sharp creases, belt loops, full length, no person, plain flat light grey background, soft studio light, luxury menswear catalog, photorealistic"
+    },
+    {
+      "id": "pantalon-lifestyle",
+      "status": "lista",
+      "prompt": "A man wearing charcoal grey tailored wool trousers with a white shirt and dark leather oxford shoes, walking through an elegant walnut-paneled tailoring atelier at night, black marble floor, warm brass pendant lights, luxury menswear campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "chaleco-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium brown herringbone wool tweed waistcoat, five horn buttons, two welt pockets, satin back, no person, plain flat light grey background, soft studio light, luxury menswear catalog, photorealistic"
+    },
+    {
+      "id": "chaleco-lifestyle",
+      "status": "lista",
+      "prompt": "A man wearing a brown herringbone tweed waistcoat over a white shirt with rolled sleeves and a dark tie, standing at a tailor cutting table with fabric bolts and brass scissors in a walnut atelier at night, warm light, luxury menswear campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "polo-front",
+      "status": "lista",
+      "prompt": "Ghost mannequin e-commerce product photo, straight front view of a premium navy blue fine knit short sleeve polo shirt, three button placket, ribbed collar, slim fit, no person, plain flat light grey background, soft studio light, luxury menswear catalog, photorealistic"
+    },
+    {
+      "id": "polo-lifestyle",
+      "status": "lista",
+      "prompt": "A man wearing a navy fine knit polo shirt and cream tailored trousers, sitting in a cognac leather armchair in a walnut-paneled lounge at golden hour, arched window with sheer curtains, luxury menswear campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "meridiano-front",
+      "status": "lista",
+      "prompt": "Luxury e-commerce product photo of a men's wristwatch, polished stainless steel 40mm round case, deep black sunburst dial with thin steel baton hour markers and slim hands, black calfskin leather strap, watch shown straight from the front with the strap running vertically above and below the case, centered, plain flat light grey background, soft studio light, minimal dial with no text, photorealistic"
+    },
+    {
+      "id": "meridiano-lifestyle",
+      "status": "lista",
+      "prompt": "Close-up of a man's wrist wearing a stainless steel dress watch with a black dial and black leather strap, white shirt cuff and charcoal suit sleeve, resting on a walnut desk with a fountain pen, warm lamp light, luxury menswear campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "aurum-front",
+      "status": "lista",
+      "prompt": "Luxury e-commerce product photo of a men's wristwatch, polished yellow gold 38mm round case, champagne dial with gold baton markers and dauphine hands, brown alligator leather strap, watch shown straight from the front with the strap running vertically above and below the case, centered, plain flat light grey background, soft studio light, minimal dial with no text, photorealistic"
+    },
+    {
+      "id": "aurum-lifestyle",
+      "status": "lista",
+      "prompt": "Close-up of a man adjusting the cuff of a navy suit, revealing a gold dress watch with a champagne dial and brown leather strap, walnut-paneled atelier in the background, warm brass light, luxury menswear campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    },
+    {
+      "id": "onix-front",
+      "status": "lista",
+      "prompt": "Luxury e-commerce product photo of a men's wristwatch, matte black ceramic 42mm chronograph case with three black subdials, black dial with steel markers, black ceramic link bracelet, watch shown straight from the front with the strap running vertically above and below the case, centered, plain flat light grey background, soft studio light, minimal dial with no text, photorealistic"
+    },
+    {
+      "id": "onix-lifestyle",
+      "status": "lista",
+      "prompt": "Close-up of a man's wrist wearing a matte black ceramic chronograph watch, black turtleneck sleeve, hand resting on a smooth concrete ledge in a minimalist concrete pavilion at night, thin vertical slit of light, luxury menswear campaign photo, 50mm lens, refined muted palette, soft cinematic light, photorealistic, no text, no logos"
+    }
+  ]
+}

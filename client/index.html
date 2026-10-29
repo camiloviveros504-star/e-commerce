@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0a0b" />
+    <title>Montevar · Obsidiana Nº 01</title>
+    <meta name="description" content="Colección Obsidiana Nº 01: piezas de edición limitada, cada una con su propio mundo. Explora cada pieza en 3D y personalízala con tu nombre." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body data-view="loading" data-ui="dark">
+    <canvas id="scene" aria-hidden="true"></canvas>
+    <div id="veil" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="/" data-link aria-label="Inicio">
+        <img class="brand__mark" src="/brand/montevar-monograma.svg" alt="" width="36" height="36" />
+        <span class="brand__text"><strong data-content="brand_name"></strong></span>
+      </a>
+      <nav class="mainnav" id="mainnav" aria-label="Principal"></nav>
+      <div class="topbar__actions">
+        <button class="btn btn--outline btn--sm" id="shop-cta" type="button" data-content="cta_shop"></button>
+        <button class="icon-btn" id="sound-toggle" type="button" aria-pressed="false" aria-label="Activar sonido">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path class="sound-on" d="M4 9v6h4l5 4V5L8 9H4Zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4Zm-2.5-8.7v2.1a7 7 0 0 1 0 13.2v2.1a9 9 0 0 0 0-17.4Z" /><path class="sound-off" d="M4 9v6h4l5 4V5L8 9H4Zm12.6 3 2.2-2.2-1.4-1.4-2.2 2.2-2.2-2.2-1.4 1.4 2.2 2.2-2.2 2.2 1.4 1.4 2.2-2.2 2.2 2.2 1.4-1.4L16.6 12Z" /></svg>
+        </button>
+        <button class="icon-btn" id="cart-toggle" type="button" aria-label="Abrir carrito" aria-controls="cart-drawer" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7V6a6 6 0 0 1 12 0v1h3l-1.5 15h-15L3 7h3Zm2 0h8V6a4 4 0 0 0-8 0v1Zm-2.8 2 1.1 11h11.4l1.1-11H5.2Z" /></svg>
+          <span class="cart-count" id="cart-count" hidden>0</span>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="menu-drawer" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18v1.6H3zM3 15.4h18V17H3z" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Menú a pantalla completa (móvil y tablet) -->
+    <div class="menu-drawer" id="menu-drawer" role="dialog" aria-modal="true" aria-label="Menú" hidden>
+      <div class="menu-drawer__head">
+        <span class="menu-drawer__brand" data-content="brand_name"></span>
+        <button class="icon-btn" id="menu-close" type="button" aria-label="Cerrar menú">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6.4 5 5.6 5.6L17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6L6.4 19 5 17.6 10.6 12 5 6.4z" /></svg>
+        </button>
+      </div>
+      <nav class="menu-drawer__nav" id="menu-nav" aria-label="Menú principal"></nav>
+      <p class="menu-drawer__foot" data-content="footer_tagline"></p>
+    </div>
+
+    <main id="main">
+      <!-- Showroom: etiqueta flotante + selector accesible de productos -->
+      <section class="showroom-ui" id="showroom-ui" aria-label="Colección">
+        <div class="intro-title">
+          <p class="eyebrow" data-content="collection_tagline"></p>
+        </div>
+        <p class="hover-label" id="hover-label" aria-hidden="true">
+          <span class="hover-label__name" id="hover-name"></span>
+          <span class="hover-label__meta"><span id="hover-price"></span> · <span data-content="card_cta"></span></span>
+        </p>
+        <nav class="product-chips" id="product-chips" aria-label="Productos"></nav>
+        <button class="home-hint" id="home-hint" type="button">
+          <span data-content="home_scroll_hint"></span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 16.6-6-6L7.4 9.2l4.6 4.6 4.6-4.6L18 10.6z" /></svg>
+        </button>
+      </section>
+
+      <!-- Recorrido del inicio: un panel por prenda destacada, sincronizado con la cámara -->
+      <section class="home-story" id="home-story" aria-label="Piezas destacadas"></section>
+
+      <!-- Inicio: colección completa debajo del showroom 3D -->
+      <div class="home" id="home">
+        <div class="home__spacer" aria-hidden="true"></div>
+        <div class="home__content">
+          <section class="editorial" id="editorial" aria-label="Líneas"></section>
+
+          <section class="catalog" id="catalog" aria-labelledby="catalog-title">
+            <header class="catalog__head">
+              <p class="eyebrow" data-content="catalog_eyebrow"></p>
+              <h2 class="catalog__title" id="catalog-title" data-content="catalog_title"></h2>
+              <p class="catalog__subtitle" data-content="catalog_subtitle"></p>
+              <div class="filters" id="filters" role="toolbar" aria-label="Filtrar por categoría"></div>
+            </header>
+            <div class="grid" id="product-grid"></div>
+          </section>
+
+          <footer class="site-footer">
+            <div class="site-footer__brand">
+              <img class="brand__mark" src="/brand/montevar-monograma.svg" alt="" width="36" height="36" />
+              <div>
+                <strong data-content="brand_name"></strong>
+                <p data-content="footer_tagline"></p>
+              </div>
+            </div>
+            <nav class="site-footer__links" aria-label="Legal">
+              <a href="#" data-content="legal_terms"></a>
+              <a href="#" data-content="legal_privacy"></a>
+              <a href="#" data-content="legal_cookies"></a>
+            </nav>
+            <p class="site-footer__copy" data-content="footer_copyright"></p>
+          </footer>
+        </div>
+      </div>
+
+      <!-- Recorrido del producto controlado por scroll -->
+      <section class="story" id="story" hidden aria-live="polite">
+        <button class="back-btn" id="back-btn" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 5.4 14 4l-8 8 8 8 1.4-1.4L8.8 12z" /></svg>
+          <span data-content="back_label"></span>
+        </button>
+        <div class="story__intro" id="story-intro">
+          <p class="eyebrow" id="story-tagline"></p>
+          <h1 class="story__title" id="story-title"></h1>
+          <p class="story__desc" id="story-desc"></p>
+        </div>
+        <figure class="lookbook" id="lookbook">
+          <button type="button" class="lookbook__btn" id="lookbook-btn" aria-label="Ver la galería de fotos">
+            <img id="lookbook-img" alt="" />
+          </button>
+          <figcaption>Lookbook · <span id="lookbook-count"></span></figcaption>
+        </figure>
+        <div class="caption" id="caption" aria-live="polite">
+          <img class="caption__img" id="caption-img" alt="" hidden />
+          <span class="caption__index" id="caption-index"></span>
+          <p class="caption__title" id="caption-title"></p>
+          <p class="caption__body" id="caption-body"></p>
+        </div>
+        <div class="scroll-hint" id="scroll-hint">
+          <span class="scroll-hint__line" aria-hidden="true"><i></i></span>
+          <span data-content="scroll_hint"></span>
+        </div>
+        <div class="progress-rail" aria-hidden="true"><span id="progress-bar"></span></div>
+
+        <div class="finale" id="finale">
+          <form class="buy-panel" id="buy-panel" novalidate>
+            <div class="buy-panel__head">
+              <div>
+                <p class="buy-panel__name" id="buy-name"></p>
+                <p class="buy-panel__price" id="buy-price"></p>
+              </div>
+            </div>
+            <div class="gallery" id="gallery" aria-label="Fotos del producto"></div>
+            <fieldset class="sizes">
+              <legend>Talla</legend>
+              <div class="sizes__grid" id="size-grid"></div>
+            </fieldset>
+            <p class="form-error" id="buy-error" role="alert" hidden></p>
+            <button class="btn btn--primary btn--block" id="add-to-cart" type="submit" data-content="add_to_cart"></button>
+          </form>
+        </div>
+        <div class="story__track" id="story-track"></div>
+      </section>
+    </main>
+
+    <!-- Carrito -->
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="drawer" id="cart-drawer" aria-label="Carrito" aria-hidden="true" inert>
+      <header class="drawer__head">
+        <h2 data-content="cart_title"></h2>
+        <button class="icon-btn" id="cart-close" type="button" aria-label="Cerrar carrito">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6.4 5 5.6 5.6L17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6L6.4 19 5 17.6 10.6 12 5 6.4z" /></svg>
+        </button>
+      </header>
+      <div class="drawer__body" id="cart-body"></div>
+    </aside>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- Visor de fotos -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galería de fotos" hidden>
+      <button class="icon-btn lightbox__close" id="lightbox-close" type="button" aria-label="Cerrar galería">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6.4 5 5.6 5.6L17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6L6.4 19 5 17.6 10.6 12 5 6.4z" /></svg>
+      </button>
+      <button class="icon-btn lightbox__nav lightbox__nav--prev" id="lightbox-prev" type="button" aria-label="Foto anterior">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 5.4 14 4l-8 8 8 8 1.4-1.4L8.8 12z" /></svg>
+      </button>
+      <figure class="lightbox__figure">
+        <img id="lightbox-img" alt="" />
+        <figcaption><span id="lightbox-caption"></span><span id="lightbox-counter"></span></figcaption>
+      </figure>
+      <button class="icon-btn lightbox__nav lightbox__nav--next" id="lightbox-next" type="button" aria-label="Foto siguiente">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.6 5.4 10 4l8 8-8 8-1.4-1.4 6.6-6.6z" /></svg>
+      </button>
+    </div>
+
+    <!-- Pantalla de carga -->
+    <div class="loader" id="loader">
+      <img class="loader__logo" src="/brand/montevar-logo.svg" alt="Montevar · Sastrería y relojería" width="300" height="300" />
+      <div class="loader__bar" aria-hidden="true"><span id="loader-bar"></span></div>
+      <p class="loader__status" id="loader-status" role="status">Cargando…</p>
+      <button class="btn btn--outline btn--sm" id="loader-retry" type="button" hidden>Reintentar</button>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
