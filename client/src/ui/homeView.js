@@ -1,8 +1,6 @@
 import gsap from 'gsap';
+import { $, prefersReducedMotion } from './dom.js';
 import { escapeHtml, formatMoney } from './format.js';
-
-const $ = (id) => document.getElementById(id);
-const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /**
  * Inicio debajo del showroom 3D: banners editoriales por línea, filtros por categoría
@@ -80,7 +78,7 @@ export function createHomeView({ products, categories, content, onOpen, scrollTo
     els.grid.innerHTML = visible.length
       ? visible.map(cardTemplate).join('')
       : `<p class="grid__empty">No hay prendas en esta categoría por ahora.</p>`;
-    if (!reduceMotion()) {
+    if (!prefersReducedMotion()) {
       gsap.fromTo(els.grid.children, { autoAlpha: 0, y: 28 }, { autoAlpha: 1, y: 0, duration: 0.6, stagger: 0.06, ease: 'power3.out' });
     }
   }
@@ -113,7 +111,7 @@ export function createHomeView({ products, categories, content, onOpen, scrollTo
         .filter((entry) => entry.isIntersecting)
         .forEach((entry, i) => {
           reveal.unobserve(entry.target);
-          if (reduceMotion()) return;
+          if (prefersReducedMotion()) return;
           gsap.fromTo(
             entry.target,
             { autoAlpha: 0, y: 90, rotationX: -22, scale: 0.94, transformPerspective: 1400, transformOrigin: '50% 100%' },

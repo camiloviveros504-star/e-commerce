@@ -1,6 +1,5 @@
 import gsap from 'gsap';
-
-const $ = (id) => document.getElementById(id);
+import { $ } from './dom.js';
 
 /** Visor de fotos a pantalla completa con navegación por teclado y transiciones. */
 export function createLightbox() {

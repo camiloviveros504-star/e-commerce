@@ -1,16 +1,15 @@
 import gsap from 'gsap';
+import { $ } from './dom.js';
 import { scrambleText } from './scramble.js';
 import { escapeHtml, formatMoney } from './format.js';
 
-const $ = (id) => document.getElementById(id);
 const FINALE_AT = 0.9; // progreso del scroll desde el que aparece el panel final
-
-/** Capa HTML del recorrido de producto: textos por parada, barra de progreso y panel final de compra. */
 const GALLERY_ORDER = ['front', 'back', 'detail', 'lifestyle'];
 
 /** Fotos del producto en el orden de la galería (omite las que falten). */
 export const galleryImages = (product) => GALLERY_ORDER.map((kind) => product.images?.[kind]).filter(Boolean);
 
+/** Capa HTML del recorrido de producto: textos por parada, barra de progreso y panel final de compra. */
 export function createStoryView({ stage, store, sound, toast, openCart, lightbox }) {
   const els = {
     root: $('story'),

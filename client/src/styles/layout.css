@@ -1,0 +1,184 @@
+/* ============ Barra superior y pie ============ */
+.topbar {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-5);
+  padding: var(--s-3) var(--gutter);
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(8, 8, 9, 0.72), rgba(8, 8, 9, 0));
+  border-bottom: 1px solid transparent;
+  transition:
+    background-color var(--t-med) ease,
+    border-color var(--t-med) ease,
+    backdrop-filter var(--t-med) ease;
+}
+.topbar.is-solid {
+  background: rgba(11, 11, 12, 0.82);
+  backdrop-filter: blur(14px);
+  border-bottom-color: rgba(185, 162, 117, 0.14);
+  pointer-events: auto;
+}
+.topbar > * {
+  pointer-events: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  text-decoration: none;
+}
+.brand__mark {
+  width: 34px;
+  height: 34px;
+  fill: none; /* monograma de trazo: no hereda el relleno global de los svg */
+}
+.brand__text {
+  display: grid;
+  line-height: 1;
+}
+.brand__text strong {
+  font-family: var(--f-brand);
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: 0.24em;
+}
+
+/* Navegación principal (escritorio) */
+.mainnav {
+  display: flex;
+  gap: clamp(18px, 2.4vw, 34px);
+}
+.mainnav__link {
+  position: relative;
+  white-space: nowrap;
+  padding: 10px 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(243, 243, 244, 0.72);
+  transition: color var(--t-fast) ease-out;
+}
+.mainnav__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  height: 1px;
+  background: var(--c-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--t-med) var(--ease);
+}
+.mainnav__link:hover,
+.mainnav__link:focus-visible,
+.mainnav__link[aria-current] {
+  color: var(--c-text);
+}
+.mainnav__link:hover::after,
+.mainnav__link:focus-visible::after,
+.mainnav__link[aria-current]::after {
+  transform: scaleX(1);
+}
+.menu-toggle {
+  display: none;
+}
+
+/* Menú a pantalla completa */
+.menu-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: var(--s-4) var(--gutter) var(--s-6);
+  background: linear-gradient(180deg, rgba(185, 162, 117, 0.06), transparent 40%), #0b0b0c;
+  clip-path: inset(0 0 100% 0);
+}
+.menu-drawer[hidden] {
+  display: none;
+}
+.menu-drawer__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--s-4);
+  border-bottom: 1px solid rgba(185, 162, 117, 0.25);
+}
+.menu-drawer__brand {
+  font-family: var(--f-brand);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.24em;
+}
+.menu-drawer__nav {
+  display: grid;
+  align-content: center;
+  gap: var(--s-2);
+}
+.menu-drawer__link {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-4);
+  padding: var(--s-3) 0;
+  border-bottom: 1px solid var(--c-line);
+  font-family: var(--f-brand);
+  font-weight: 600;
+  font-size: clamp(26px, 7vw, 44px);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--c-text);
+}
+.menu-drawer__link[aria-current] {
+  color: var(--c-gold);
+}
+.menu-drawer__index {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--c-gold);
+}
+.menu-drawer__foot {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+}
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Pantallas medianas: el menú ya lleva a la colección, el botón sobra. */
+@media (max-width: 1280px) {
+  #shop-cta {
+    display: none;
+  }
+}
+/* Hasta tablet: la navegación pasa al menú desplegable. */
+@media (max-width: 1024px) {
+  .mainnav,
+  #shop-cta {
+    display: none;
+  }
+  .menu-toggle {
+    display: inline-grid;
+  }
+}
+.topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+body[data-view='loading'] .topbar,
+body[data-view='loading'] .showroom-ui,
+body[data-view='loading'] .home {
+  visibility: hidden;
+}

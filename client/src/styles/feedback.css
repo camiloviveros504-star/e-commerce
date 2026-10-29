@@ -1,0 +1,75 @@
+/* ============ Toast ============ */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: var(--s-4);
+  max-width: calc(100vw - 32px);
+  padding: var(--s-3) var(--s-3) var(--s-3) var(--s-4);
+  border-radius: var(--r-md);
+  background: #f3f3f4;
+  color: #121214;
+  font-size: 13px;
+  box-shadow: var(--shadow);
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+}
+.toast button {
+  flex: none;
+  min-height: 36px;
+  padding: 0 var(--s-3);
+  border: 0;
+  border-radius: var(--r-sm);
+  background: #121214;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background-color var(--t-fast) ease-out;
+}
+.toast button:hover {
+  background: var(--c-accent);
+}
+
+/* ============ Pantalla de carga ============ */
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: var(--s-5);
+  background: #000;
+  color: #f3f3f4;
+}
+.loader__logo {
+  width: min(300px, 70vw);
+  height: auto;
+}
+.loader__bar {
+  width: 160px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+}
+.loader__bar span {
+  display: block;
+  height: 100%;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.loader__status {
+  margin: 0;
+  min-height: 1.5em;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(243, 243, 244, 0.6);
+  text-align: center;
+  max-width: 320px;
+}

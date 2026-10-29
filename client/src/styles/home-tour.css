@@ -1,0 +1,174 @@
+/* ============ Recorrido del inicio (paneles sincronizados con la cámara) ============ */
+.home-story {
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  pointer-events: none;
+  perspective: 1400px;
+}
+body:not([data-view='showroom']) .home-story {
+  display: none;
+}
+/* Velo editorial: oscurece el lado del texto para que se lea sobre la escena. */
+.home-story::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(10, 8, 7, 0.88) 0%, rgba(10, 8, 7, 0.6) 32%, rgba(10, 8, 7, 0) 58%);
+  opacity: 0;
+  transition: opacity 0.8s var(--ease);
+}
+.home-story.is-visible::before {
+  opacity: 1;
+}
+.story-panel {
+  position: absolute;
+  top: 50%;
+  left: var(--gutter);
+  width: min(500px, 42vw);
+  display: grid;
+  gap: var(--s-3);
+  margin-top: -40px;
+  opacity: 0;
+  transform: translate3d(0, 70px, -120px) rotateX(-28deg);
+  transform-origin: 50% 100%;
+  transition:
+    opacity 0.7s var(--ease),
+    transform 1s var(--ease);
+  translate: 0 -50%;
+}
+.story-panel.is-past {
+  transform: translate3d(0, -70px, -120px) rotateX(28deg);
+  transform-origin: 50% 0%;
+}
+.story-panel.is-active {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+/* Los elementos del panel entran escalonados. */
+.story-panel > * {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.6s var(--ease),
+    transform 0.8s var(--ease);
+}
+.story-panel.is-active > * {
+  opacity: 1;
+  transform: none;
+}
+.story-panel.is-active > :nth-child(2) {
+  transition-delay: 0.06s;
+}
+.story-panel.is-active > :nth-child(3) {
+  transition-delay: 0.12s;
+}
+.story-panel.is-active > :nth-child(4) {
+  transition-delay: 0.18s;
+}
+.story-panel.is-active > :nth-child(5) {
+  transition-delay: 0.24s;
+}
+.story-panel.is-active > :nth-child(6) {
+  transition-delay: 0.3s;
+}
+.story-panel .eyebrow {
+  color: var(--c-gold);
+}
+.story-panel__name {
+  margin: 0;
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: clamp(34px, min(5vw, 9vh), 76px);
+  line-height: 0.92;
+  text-wrap: balance;
+  text-transform: uppercase;
+  text-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+}
+.story-panel__tagline {
+  margin: 0;
+  font-size: 15px;
+  color: rgba(243, 243, 244, 0.86);
+}
+.story-panel__desc {
+  margin: 0;
+  max-width: 40ch;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--c-muted);
+}
+.story-panel__foot {
+  display: flex;
+  align-items: center;
+  gap: var(--s-4);
+  margin-top: var(--s-2);
+  padding-top: var(--s-4);
+  border-top: 1px solid rgba(185, 162, 117, 0.25);
+}
+.story-panel__price {
+  font-family: var(--f-mono);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: var(--c-gold);
+}
+@media (max-height: 640px) {
+  .story-panel {
+    margin-top: 0;
+    gap: var(--s-2);
+  }
+  .story-panel__desc {
+    display: none;
+  }
+}
+.story-rail {
+  position: absolute;
+  right: var(--gutter);
+  top: 50%;
+  display: grid;
+  gap: 10px;
+  translate: 0 -50%;
+  opacity: 0;
+  transition: opacity 0.6s var(--ease);
+}
+.home-story.is-visible .story-rail {
+  opacity: 1;
+}
+.story-rail span {
+  width: 2px;
+  height: 34px;
+  background: rgba(255, 255, 255, 0.16);
+  transition: background-color 0.6s var(--ease);
+}
+.story-rail span.is-on {
+  background: var(--c-gold);
+}
+
+/* Con muchas prendas el selector se compacta: miniaturas y solo la activa muestra su nombre. */
+@media (max-width: 1180px) {
+  .product-chips {
+    left: 16px;
+    right: 16px;
+    transform: none;
+    justify-content: center;
+    max-width: none;
+  }
+  .chip {
+    gap: 0;
+    padding: 0 6px;
+  }
+  .chip span {
+    max-width: 0;
+    overflow: hidden;
+    transition: max-width var(--t-med) var(--ease);
+  }
+  .chip.is-active,
+  .chip:hover {
+    gap: var(--s-2);
+    padding-right: var(--s-3);
+  }
+  .chip.is-active span,
+  .chip:hover span {
+    max-width: 200px;
+  }
+}

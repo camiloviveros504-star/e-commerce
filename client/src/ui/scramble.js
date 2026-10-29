@@ -1,11 +1,12 @@
+import { prefersReducedMotion } from './dom.js';
+
 const GLYPHS = '▓▒░<>/\\_-=+*#%&@01OBSIDNA';
-const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /** Efecto "glitch": el texto aparece descifrándose carácter por carácter. */
 export function scrambleText(element, text, { duration = 900 } = {}) {
   element._scrambleId = (element._scrambleId ?? 0) + 1;
   const id = element._scrambleId;
-  if (reduceMotion() || !text) {
+  if (prefersReducedMotion() || !text) {
     element.textContent = text;
     return;
   }

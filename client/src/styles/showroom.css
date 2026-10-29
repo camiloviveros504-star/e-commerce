@@ -1,0 +1,149 @@
+/* ============ Showroom ============ */
+.showroom-ui {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+/* Abajo, sobre el selector: arriba queda el friso 3D con la marca. */
+.intro-title {
+  position: absolute;
+  bottom: 128px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: max-content;
+  max-width: calc(100vw - 32px);
+}
+.intro-title {
+  transition: opacity var(--t-med) ease;
+}
+.showroom-ui.is-hovering .intro-title {
+  opacity: 0;
+}
+.eyebrow {
+  margin: 0;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+}
+.hover-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity var(--t-med) var(--ease);
+  will-change: transform;
+}
+.hover-label.is-visible {
+  opacity: 1;
+}
+.hover-label > * {
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.9),
+    0 4px 18px rgba(0, 0, 0, 0.85);
+}
+.hover-label__name {
+  font-family: var(--f-display);
+  font-size: 22px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hover-label__name::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 1px;
+  margin: 8px auto 0;
+  background: var(--c-gold);
+}
+.hover-label__meta {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+}
+.home-hint {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  padding: var(--s-2);
+  border: 0;
+  background: none;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+  pointer-events: auto;
+  transition: color var(--t-fast) ease-out;
+}
+.home-hint svg {
+  width: 18px;
+  height: 18px;
+  animation: hint-bob 2s var(--ease) infinite;
+}
+.home-hint:hover {
+  color: var(--c-gold);
+}
+@keyframes hint-bob {
+  50% {
+    transform: translateY(4px);
+  }
+}
+.product-chips {
+  position: absolute;
+  left: 50%;
+  bottom: 68px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: var(--s-2);
+  max-width: calc(100vw - 32px);
+  overflow-x: auto;
+  pointer-events: auto;
+  scrollbar-width: none;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  min-height: 44px;
+  padding: 0 var(--s-4);
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-pill);
+  background: rgba(10, 10, 11, 0.45);
+  backdrop-filter: blur(8px);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition:
+    border-color var(--t-fast) ease-out,
+    background-color var(--t-fast) ease-out,
+    transform var(--t-fast) ease-out;
+}
+.chip img {
+  width: 28px;
+  height: 34px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--ring) 60%, transparent));
+}
+.chip.is-active,
+.chip:hover,
+.chip:focus-visible {
+  border-color: var(--ring);
+  background: rgba(10, 10, 11, 0.75);
+  transform: translateY(-2px);
+}

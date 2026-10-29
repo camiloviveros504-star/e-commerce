@@ -1,0 +1,178 @@
+/* ============ Responsive ============ */
+@media (max-width: 720px) {
+  .topbar {
+    padding: var(--s-3) var(--s-4);
+  }
+  #shop-cta {
+    display: none;
+  }
+  .product-chips {
+    bottom: 24px;
+  }
+  .intro-title {
+    bottom: 128px;
+  }
+  .back-btn {
+    top: 68px;
+  }
+  .story__intro {
+    bottom: 110px;
+  }
+  .caption,
+  .caption[data-side='left'],
+  .caption[data-side='right'] {
+    left: 16px;
+    right: 16px;
+    top: auto;
+    bottom: 96px;
+    max-width: none;
+    transform: none;
+  }
+  .progress-rail,
+  .lookbook,
+  .caption__img {
+    display: none;
+  }
+  .home-story::before {
+    background: linear-gradient(0deg, rgba(10, 8, 7, 0.85) 0%, rgba(10, 8, 7, 0) 45%);
+  }
+  .story-panel {
+    top: auto;
+    bottom: 24px;
+    left: 16px;
+    right: 16px;
+    width: auto;
+    margin: 0;
+    gap: var(--s-2);
+    translate: none;
+    padding: var(--s-4);
+    border: 1px solid rgba(185, 162, 117, 0.18);
+    border-radius: var(--r-md);
+    background: linear-gradient(180deg, rgba(12, 10, 9, 0.55), rgba(12, 10, 9, 0.88));
+    backdrop-filter: blur(10px);
+  }
+  .story-panel__name {
+    font-size: 34px;
+  }
+  .story-panel__desc,
+  .story-rail {
+    display: none;
+  }
+  .story-panel__foot {
+    margin-top: 0;
+    padding-top: var(--s-3);
+    justify-content: space-between;
+  }
+  /* Selector compacto: miniaturas; solo la prenda activa muestra su nombre. */
+  .product-chips {
+    left: 16px;
+    right: 16px;
+    bottom: 64px;
+    transform: none;
+    justify-content: center;
+    max-width: none;
+  }
+  .chip {
+    gap: 0;
+    padding: 0 6px;
+    font-size: 11px;
+  }
+  .chip span {
+    max-width: 0;
+    overflow: hidden;
+    transition: max-width var(--t-med) var(--ease);
+  }
+  .chip.is-active {
+    gap: var(--s-2);
+    padding-right: var(--s-3);
+  }
+  /* En el teléfono el nombre ya aparece sobre la prenda: el selector queda solo con miniaturas. */
+  .chip.is-active,
+  .chip:hover {
+    gap: 0;
+    padding: 0 6px;
+  }
+  .chip.is-active span,
+  .chip:hover span {
+    max-width: 0;
+  }
+  .home-hint {
+    width: max-content;
+    max-width: calc(100vw - 32px);
+    letter-spacing: 0.14em;
+    white-space: nowrap;
+  }
+  .intro-title .eyebrow {
+    letter-spacing: 0.14em;
+  }
+  .hover-label__name {
+    font-size: 18px;
+  }
+  /* La categoría ya está en los filtros: en tarjetas angostas la etiqueta tapaba la prenda. */
+  .card__badge {
+    display: none;
+  }
+  .catalog__head {
+    grid-template-columns: minmax(0, 1fr); /* la fila de filtros se desplaza en vez de ensanchar la página */
+  }
+  .filters {
+    justify-self: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-inline: -16px;
+    padding-inline: 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .filter {
+    flex: none;
+  }
+  .editorial__tile {
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .card__name {
+    font-size: 17px;
+  }
+  .card__info {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .site-footer {
+    grid-template-columns: 1fr;
+  }
+  .lightbox {
+    grid-template-columns: 1fr;
+    padding: 64px 16px 24px;
+  }
+  .lightbox__nav {
+    display: none;
+  }
+  .buy-panel {
+    right: 16px;
+    left: 16px;
+    bottom: 16px;
+    width: auto;
+    padding: var(--s-4);
+    gap: var(--s-3);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .story-panel,
+  .story-panel > * {
+    transition-duration: 0.01s !important;
+    transition-delay: 0s !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

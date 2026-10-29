@@ -1,4 +1,5 @@
 import gsap from 'gsap';
+import { $, prefersReducedMotion } from './dom.js';
 import { escapeHtml } from './format.js';
 
 /**
@@ -6,12 +7,12 @@ import { escapeHtml } from './format.js';
  * En escritorio va en la barra superior; en móvil y tablet se abre a pantalla completa.
  */
 export function createMainMenu({ categories, content, onSelect, onOpenChange = () => {} }) {
-  const bar = document.getElementById('mainnav');
-  const drawer = document.getElementById('menu-drawer');
-  const drawerNav = document.getElementById('menu-nav');
-  const toggle = document.getElementById('menu-toggle');
-  const close = document.getElementById('menu-close');
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const bar = $('mainnav');
+  const drawer = $('menu-drawer');
+  const drawerNav = $('menu-nav');
+  const toggle = $('menu-toggle');
+  const close = $('menu-close');
+  const reduceMotion = prefersReducedMotion();
 
   const items = [{ slug: 'all', name: content.nav_collection ?? 'Colección' }, ...categories.map((c) => ({ slug: c.slug, name: c.name }))];
   const link = (item, i, big) =>

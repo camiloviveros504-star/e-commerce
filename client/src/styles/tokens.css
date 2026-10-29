@@ -1,0 +1,108 @@
+/* ============ Tokens ============ */
+:root {
+  --c-bg: #0a0a0b;
+  --c-surface: rgba(18, 18, 20, 0.78);
+  --c-surface-solid: #141416;
+  --c-line: rgba(255, 255, 255, 0.16);
+  --c-text: #f3f3f4;
+  --c-muted: rgba(243, 243, 244, 0.62);
+  --c-accent: #ff2a2a;
+  --c-accent-ink: #ffffff;
+  --c-caption: #ff6a3d;
+  --c-gold: #b9a275; /* latón envejecido: acento formal */
+  --c-ink: #0b0b0c;
+  --c-panel: #131315;
+  --c-success: #3ddc97;
+  --c-error: #ff5a5a;
+
+  --f-display: 'Anton', Impact, sans-serif;
+  --f-brand: 'Cinzel', 'Times New Roman', serif; /* capitales romanas: firma de sastrería */
+  --f-body: 'Inter', system-ui, sans-serif;
+  --f-mono: 'Space Mono', ui-monospace, monospace;
+
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+
+  /* Esquinas rectas: lenguaje sobrio de sastrería (sin formas redondeadas tipo píldora). */
+  --r-sm: 0px;
+  --r-md: 2px;
+  --r-pill: 2px;
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --t-fast: 180ms;
+  --t-med: 280ms;
+  --gutter: clamp(16px, 3vw, 40px);
+}
+
+body[data-ui='light'] {
+  --c-text: #121214;
+  --c-muted: rgba(18, 18, 20, 0.6);
+  --c-line: rgba(18, 18, 20, 0.2);
+  --c-surface: rgba(255, 255, 255, 0.8);
+  --c-caption: #c4161c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  /* Sin rebote elástico ni "tirar para recargar": en móvil hacía que la página volviera atrás. */
+  overscroll-behavior-y: none;
+}
+body {
+  margin: 0;
+  overscroll-behavior-y: none;
+  min-height: 100vh;
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--f-body);
+  font-size: 15px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  transition: color var(--t-med) ease;
+}
+body[data-view='loading'] {
+  overflow: hidden;
+  height: 100vh;
+}
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+}
+a {
+  color: inherit;
+}
+:focus-visible {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 3px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.muted {
+  color: var(--c-muted);
+  font-size: 13px;
+}
+svg {
+  fill: currentColor;
+}

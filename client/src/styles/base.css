@@ -1,0 +1,146 @@
+/* ============ Lienzo y velo de transición ============ */
+#scene {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  z-index: 0;
+  touch-action: pan-y;
+}
+#veil {
+  position: fixed;
+  inset: 0;
+  z-index: 6;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  background: #000;
+}
+
+/* ============ Botones ============ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  min-height: 44px;
+  padding: 0 var(--s-5);
+  border-radius: var(--r-sm);
+  border: 1px solid transparent;
+  font-family: var(--f-body);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition:
+    background-color var(--t-fast) ease-out,
+    color var(--t-fast) ease-out,
+    border-color var(--t-fast) ease-out,
+    transform var(--t-fast) ease-out;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+.btn--sm {
+  min-height: 36px;
+  padding: 0 var(--s-4);
+  font-size: 11px;
+}
+.btn--block {
+  width: 100%;
+}
+.btn--primary {
+  background: var(--c-accent);
+  color: var(--c-accent-ink);
+}
+.btn--primary:hover {
+  background: #ff4a4a;
+}
+.btn--primary:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+/* Compra por WhatsApp: verde sobrio, con el ícono de la app. */
+.btn--whatsapp {
+  background: #1f7a4d;
+  border-color: #1f7a4d;
+  color: #fff;
+}
+.btn--whatsapp:hover {
+  background: #23905a;
+  border-color: #23905a;
+}
+.btn--whatsapp svg,
+.cart-state .btn--whatsapp svg {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  fill: currentColor;
+}
+.btn--outline {
+  border-color: currentColor;
+  background: transparent;
+}
+.btn--outline:hover {
+  background: var(--c-text);
+  color: var(--c-bg);
+  border-color: var(--c-text);
+}
+body[data-ui='light'] .btn--outline:hover {
+  color: #fff;
+}
+.icon-btn {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: var(--r-pill);
+  background: transparent;
+  transition:
+    background-color var(--t-fast) ease-out,
+    transform var(--t-fast) ease-out;
+}
+.icon-btn:hover {
+  background: rgba(127, 127, 127, 0.18);
+}
+.icon-btn svg {
+  width: 22px;
+  height: 22px;
+}
+.link-btn {
+  border: 0;
+  background: none;
+  padding: 0;
+  font-size: 12px;
+  color: var(--c-muted);
+  text-decoration: underline;
+  transition: color var(--t-fast) ease-out;
+}
+.link-btn:hover {
+  color: var(--c-text);
+}
+#sound-toggle .sound-off,
+#sound-toggle[aria-pressed='true'] .sound-on {
+  display: inline;
+}
+#sound-toggle .sound-on,
+#sound-toggle[aria-pressed='true'] .sound-off {
+  display: none;
+}
+.cart-count {
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: var(--r-pill);
+  background: var(--c-accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 18px;
+}
